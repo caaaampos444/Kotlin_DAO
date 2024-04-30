@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">palampos_contatos</string>
+    <string name="title_new_contact">New Contact</string>
+    <string name="contact_name">Contact name</string>
+    <string name="contact_email">Contact email</string>
+    <string name="contact_phone">Contact phone</string>
+    <string name="contact_birth">Contact birth</string>
+    <string name="contact_friend">Friend</string>
+    <string name="button_text">Save</string>
+</resources>
