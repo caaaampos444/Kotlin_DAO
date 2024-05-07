@@ -68,4 +68,7 @@ dependencies {
     implementation("androidx.room:room-runtime:2.6.1")
     annotationProcessor("androidx.room:room-compiler:2.6.1")
     kapt("androidx.room:room-compiler:2.6.1")
+
+    implementation("androidx.navigation:navigation-compose:2.7.7")
+
 }

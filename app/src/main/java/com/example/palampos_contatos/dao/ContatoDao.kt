@@ -11,10 +11,10 @@ import com.example.palampos_contatos.model.Contato
 interface ContatoDao {
 
     @Insert
-    fun salvar(contato: Contato)
+    fun salvar(contato: Contato): Long
 
     @Update
-    fun atualizar(contato: Contato)
+    fun atualizar(contato: Contato): Int
 
     @Delete
     fun deletar(contato: Contato)
@@ -27,5 +27,8 @@ interface ContatoDao {
 
     @Query("SELECT * FROM tbl_contatos WHERE is_amigo = 1")
     fun listarTodosOsAmigos(): List<Contato>
+
+    @Query("SELECT * FROM tbl_contatos WHERE id = :id")
+    fun buscarContatoPeloID(id: Long): Contato
 
 }
